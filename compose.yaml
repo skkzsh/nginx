@@ -1,6 +1,6 @@
 services:
-  app:
-    container_name: nginx
+  skeleton:
+    container_name: skeleton_nginx
     image: skkzsh/nginx
     build: .
     ports:
