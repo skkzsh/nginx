@@ -1,0 +1,9 @@
+services:
+  app:
+    container_name: nginx
+    image: skkzsh/nginx
+    build: .
+    ports:
+      - 10080:80
+    environment:
+      TZ: Asia/Tokyo
