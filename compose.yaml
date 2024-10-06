@@ -7,3 +7,9 @@ services:
       - 10080:80
     environment:
       TZ: Asia/Tokyo
+    healthcheck:
+      test: curl -f http://localhost/health || exit 1
+      interval: 10s
+      timeout: 3s
+      retries: 2
+      start_period: 5s
